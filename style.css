@@ -229,7 +229,7 @@ body {
   background-size: cover;
   display: block;
   width: 100%;
-  padding-bottom: 30%;
+  padding-bottom: 15%;
   background-position-y: bottom;
 }
 
@@ -317,4 +317,126 @@ body {
 
 .about-us-icon {
   margin: 20px 0;
+}
+
+@media (min-width: 400px) {
+  .huddle-page-info .huddle-page-info-description {
+    width: 40%;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+
+  .pink-btn {
+    width: 40%;
+  }
+
+  .resurs-info {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .resurs-info .formed .communities-formed-text,
+  .sent-messages {
+    margin-bottom: 0px;
+  }
+
+  .resurs-info .formed .communities-formed-text,
+  .sent-messages .sent-messages-text {
+    margin-bottom: 0px;
+  }
+  .grow-together,
+  .flowing-conversation,
+  .your-users {
+    flex-direction: row;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+
+  .grow-together,
+  .your-users {
+    flex-direction: row-reverse;
+  }
+
+  .grow-together .grow-together-img,
+  .flowing-conversation-img,
+  .your-users-img {
+    width: 40%;
+    margin: 0;
+  }
+
+  .grow-together-texts,
+  .flowing-conversation-texts,
+  .your-users-texts {
+    text-align: start;
+    padding: 0;
+    align-self: center;
+    width: 40%;
+  }
+  .grow-together-wrapper,
+  .flowing-conversation,
+  .your-users-wrapper,
+  .your-users-wrapper {
+    margin-bottom: 100px;
+  }
+
+  .grow-together-texts .grow-together-texts-title,
+  .flowing-conversation-texts-title,
+  .your-users-texts-title {
+    padding: 0;
+    margin-bottom: 30px;
+  }
+
+  .grow-together-texts .grow-together-texts-description,
+  .flowing-conversation-texts-description,
+  .your-users-texts-description {
+    padding: 0;
+    text-align: start;
+  }
+  .grow-together-wave {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .grow-together-wave-bottom {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer-subscribe-field-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .subscribe-field-info,
+  .register-field {
+    width: 60%;
+  }
+
+  .subscribe-field-info {
+    width: 80%;
+    align-self: end;
+  }
+
+  .register-field {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .register-field .email-field {
+    padding: 0;
+    padding-left: 5px;
+    margin-bottom: 0;
+  }
+
+  .register-field .register-btn {
+    margin-bottom: 0;
+    margin-left: 20px;
+  }
 }
