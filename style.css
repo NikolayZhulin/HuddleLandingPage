@@ -1,0 +1,320 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: white;
+}
+
+.HuddleLandingPage {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.header .header-title {
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  margin-left: 25px;
+}
+
+.header .header-title::before {
+  content: "";
+  background: url(images/icon-messages.svg) no-repeat;
+  position: absolute;
+  background-size: contain;
+  margin-left: -25px;
+  margin-top: 7px;
+  width: 25px;
+  height: 20px;
+}
+
+.header .header-btn {
+  width: 120px;
+  height: 30px;
+  border-radius: 20px;
+  background: white;
+  border: 2px solid hsl(322, 100%, 66%);
+  color: hsl(322, 100%, 66%);
+  margin-top: 5px;
+}
+
+.header .header-btn:hover {
+  border: 2px solid hsl(321, 100%, 78%);
+  color: hsl(321, 100%, 78%);
+  cursor: pointer;
+}
+
+.huddle-page-info {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.huddle-page-info .huddle-page-info-title {
+  color: hsl(192, 100%, 9%);
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  padding: 30px;
+  text-align: center;
+}
+
+.huddle-page-info .huddle-page-info-description {
+  color: hsl(192, 100%, 9%);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 0 20px;
+  text-align: center;
+  line-height: 25px;
+  margin-bottom: 40px;
+}
+
+.pink-btn {
+  width: 70%;
+  height: 60px;
+  padding: 20px 0;
+  background: hsl(322, 100%, 66%);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.49);
+}
+
+.pink-btn:hover {
+  background: hsl(321, 100%, 78%);
+  cursor: pointer;
+}
+
+.windows-img {
+  margin: 120px 30px;
+}
+
+.resurs-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resurs-info .formed,
+.resurs-info .sent-messages {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.resurs-info .formed .communities-formed,
+.sent-messages .amount-messages {
+  font-size: 60px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  color: hsl(192, 100%, 9%);
+}
+
+.resurs-info .formed .communities-formed-text,
+.sent-messages .sent-messages-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  color: grey;
+  margin-bottom: 80px;
+}
+
+.resurs-info .formed .communities-formed::before {
+  content: "";
+  background: url(images/icon-communities.svg) no-repeat;
+  position: absolute;
+  background-size: contain;
+  margin-top: -20px;
+  width: 35px;
+  height: 25px;
+}
+
+.resurs-info .sent-messages .amount-messages::before {
+  content: "";
+  background: url(images/icon-messages.svg) no-repeat;
+  position: absolute;
+  background-size: contain;
+  margin-top: -20px;
+  width: 35px;
+  height: 25px;
+  margin-bottom: 80px;
+}
+
+.resurs-info .sent-messages .sent-messages-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.grow-together-wrapper,
+.flowing-conversation,
+.your-users-wrapper {
+  margin-bottom: 200px;
+}
+
+.grow-together-wave,
+.your-users-wave {
+  width: 100%;
+  margin-bottom: -10px;
+}
+
+.grow-together,
+.flowing-conversation,
+.your-users {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.grow-together,
+.your-users {
+  background: hsl(207, 100%, 98%);
+}
+
+.grow-together-img,
+.flowing-conversation-img,
+.your-users-img {
+  margin: 0px 30px 80px;
+}
+
+.grow-together-texts-title,
+.flowing-conversation-texts-title,
+.your-users-texts-title,
+.build-community-title {
+  color: hsl(192, 100%, 9%);
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  padding: 30px;
+}
+
+.grow-together-texts-description,
+.flowing-conversation-texts-description,
+.your-users-texts-description {
+  color: hsl(192, 100%, 9%);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 0 20px;
+  text-align: center;
+  line-height: 25px;
+}
+
+.build-community {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 200px;
+}
+
+/* .footer-wave {
+  width: 100%;
+  margin-bottom: -5px;
+} */
+
+.footer::before {
+  content: "";
+  background: url(images/bg-footer-top-mobile.svg);
+  background-size: cover;
+  display: block;
+  width: 100%;
+  padding-bottom: 30%;
+  background-position-y: bottom;
+}
+
+.subscribe-field-wrapper {
+  background: hsl(192, 100%, 9%);
+}
+
+.footer .subscribe-field {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.subscribe-field-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+}
+
+.subscribe-field-description {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+.register-field {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.subscribe-field .email-field {
+  height: 40px;
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  border: none;
+}
+
+.register-field .register-btn {
+  height: 40px;
+  width: 45%;
+  background: hsl(322, 100%, 66%);
+  border: none;
+  border-radius: 5px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 80px;
+}
+
+.register-field .register-btn:hover {
+  background: hsl(321, 100%, 78%);
+  cursor: pointer;
+}
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+  color: white;
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+.about-us-description {
+  margin-top: 30px;
+}
+
+.about-us-number {
+  padding-top: 30px;
+}
+
+.about-us-number::before {
+  content: url(https://www.flaticon.com/ru/free-icons/instagram);
+}
+
+.about-us-email {
+  margin-top: 10px;
+}
+
+.about-us-icon {
+  margin: 20px 0;
+}
